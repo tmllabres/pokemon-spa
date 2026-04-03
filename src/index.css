@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pokemon-normal: #a8a878;
+  --color-pokemon-fire: #f08030;
+  --color-pokemon-water: #6890f0;
+  --color-pokemon-electric: #f8d030;
+  --color-pokemon-grass: #78c850;
+  --color-pokemon-ice: #98d8d8;
+  --color-pokemon-fighting: #c03028;
+  --color-pokemon-poison: #a040a0;
+  --color-pokemon-ground: #e0c068;
+  --color-pokemon-flying: #a890f0;
+  --color-pokemon-psychic: #f85888;
+  --color-pokemon-bug: #a8b820;
+  --color-pokemon-rock: #b8a038;
+  --color-pokemon-ghost: #705898;
+  --color-pokemon-dragon: #7038f8;
+  --color-pokemon-dark: #705848;
+  --color-pokemon-steel: #b8b8d0;
+  --color-pokemon-fairy: #ee99ac;
+  --color-primary: #e94560;
+  --color-primary-dark: #d63050;
+  --color-surface: #16213e;
+  --color-surface-dark: #0f3460;
+  --color-bg: #1a1a2e;
+  --color-muted: #8888a0;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pop {
+  0% { transform: scale(0); }
+  80% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@utility animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
+}
+
+@utility animate-pop {
+  animation: pop 0.3s ease;
+}
+
+@utility animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+*, *::before, *::after {
+  cursor: default;
+}
+
+a, button, [role="button"], label[for], select, summary {
+  cursor: pointer;
+}
+
+input, textarea {
+  cursor: text;
+}
+
+input, textarea, select {
+  outline: none !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background-color: var(--color-bg);
+}
