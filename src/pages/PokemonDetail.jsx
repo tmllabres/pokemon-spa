@@ -91,7 +91,7 @@ export default function PokemonDetail() {
   const btn = getButtonProps();
 
   return (
-    <div className={`max-w-3xl mx-auto rounded-2xl p-4 ${typeBgFaded[mainType] || ""}`}>
+    <div className={`max-w-3xl mx-auto rounded-2xl p-4 max-sm:p-2 ${typeBgFaded[mainType] || ""}`}>
       <button
         onClick={() => navigate(-1)}
         className="px-4 py-2 rounded-xl border-2 border-surface-dark bg-surface text-gray-200 font-semibold mb-6 transition-all duration-300 hover:border-primary hover:text-primary"
@@ -109,7 +109,7 @@ export default function PokemonDetail() {
           <span className="text-gray-500 text-xl font-bold">
             #{String(pokemon.id).padStart(3, "0")}
           </span>
-          <h1 className="text-white text-4xl font-bold mt-1 mb-3 max-md:text-3xl">
+          <h1 className="text-white text-4xl font-bold mt-1 mb-3 max-md:text-3xl max-sm:text-2xl">
             {formatName(pokemon.name)}
           </h1>
           <div className="flex gap-2 flex-wrap max-md:justify-center mb-4">
@@ -140,7 +140,7 @@ export default function PokemonDetail() {
           <h3 className="text-primary font-semibold mb-4 pb-2 border-b border-surface-dark">
             Datos
           </h3>
-          <div className="flex gap-8">
+          <div className="flex gap-8 max-sm:gap-6">
             <div className="flex flex-col gap-1">
               <span className="text-muted text-sm">Altura</span>
               <span className="text-white text-xl font-semibold">{pokemon.height} m</span>

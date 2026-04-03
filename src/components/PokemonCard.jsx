@@ -46,7 +46,7 @@ export default function PokemonCard({ pokemon }) {
       <img
         src={pokemon.image}
         alt={pokemon.name}
-        className="w-28 h-28 mx-auto object-contain drop-shadow-lg transition-transform duration-300 hover:scale-110"
+        className="w-28 h-28 max-sm:w-20 max-sm:h-20 mx-auto object-contain drop-shadow-lg transition-transform duration-300 hover:scale-110"
       />
 
       <h3 className="text-white text-lg font-semibold mt-2">

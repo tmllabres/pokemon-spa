@@ -31,7 +31,7 @@ export default function Home() {
         <h1 className="text-5xl font-bold text-white mb-2 max-md:text-3xl">
           Bienvenido a la Pokédex
         </h1>
-        <p className="text-lg text-muted mb-8">
+        <p className="text-lg text-muted mb-8 max-sm:text-base">
           Explora, busca y construye tu equipo Pokémon ideal
         </p>
 
