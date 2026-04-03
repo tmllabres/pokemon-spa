@@ -64,6 +64,12 @@ export default function PokemonCard({ pokemon }) {
         ))}
       </div>
 
+      {pokemon.totalStats != null && (
+        <p className="text-muted text-xs font-bold mt-2">
+          {pokemon.totalStats} <span className="text-muted/60">BTS</span>
+        </p>
+      )}
+
       <button
         className={`mt-3 px-4 py-1.5 rounded-full text-sm font-semibold border-2 transition-all duration-300 ${btn.style}`}
         onClick={handleTeamToggle}
