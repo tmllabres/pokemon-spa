@@ -4,15 +4,9 @@ Una Single Page Application de Pokémon construida con React 19, Tailwind CSS 4 
 
 **Demo en vivo:** https://pokemon-daw.vercel.app/
 
-**Video demo:** [test.mp4](./test.mp4)
+## Demo
 
----
-
-## Capturas
-
-| Home | Pokédex | Detalle | Equipo |
-|------|---------|---------|--------|
-| Página de inicio con Pokémon destacados | Catálogo con filtros y scroll infinito | Vista detallada con stats | Gestión de equipo (máx. 6) |
+<video src="./test.mp4" controls autoplay muted loop width="100%"></video>
 
 ---
 
